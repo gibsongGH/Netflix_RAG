@@ -40,3 +40,4 @@ python app.py
 ## Live demo
 
 Try it on [Hugging Face Spaces](https://huggingface.co/spaces/gibsongHF/Netflix_RAG).
+(May take a minute to refresh)
