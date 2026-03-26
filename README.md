@@ -12,11 +12,12 @@ pinned: false
 
 # Netflix Culture RAG Chatbot
 
-A demo chatbot built with **Retrieval-Augmented Generation (RAG)** that answers questions about the [Netflix Culture Memo](https://jobs.netflix.com/culture).
+A demo chatbot built with **Retrieval-Augmented Generation (RAG)** that answers questions about the [Netflix Culture Memo](https://jobs.netflix.com/culture), 
+[Work-Life Philosophy](https://jobs.netflix.com/work-life-philosophy) and [2025 Annual Report Intro](https://s22.q4cdn.com/959853165/files/doc_financials/2025/ar/99482238-46b2-4d0d-b292-40e6781bdf03.pdf).
 
 ## How it works
 
-1. The Netflix Culture Memo is chunked and embedded using OpenAI's `text-embedding-3-small` model at startup.
+1. The documents are chunked and embedded using OpenAI's `text-embedding-3-small` model at startup.
 2. Embeddings are stored in an in-memory [ChromaDB](https://www.trychroma.com/) vector database.
 3. When you ask a question, the most relevant chunks are retrieved and passed as context to `gpt-4.1-mini`.
 4. The response is streamed back via a [Gradio](https://gradio.app/) chat interface.
